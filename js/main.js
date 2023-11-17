@@ -15,15 +15,18 @@ function hideshow(para) {
 
 
 
-function submitLogin() {
-    const loginUsername = String(document.getElementById('loginUsername').value);
-    const loginPassword = String(document.getElementById('loginPassword').value);
-    console.log(loginPassword);
-    if (loginUsername == "vinhthanh" && loginPassword == "123456") {
-        window.location.pathname = "index.html"
-    } else {
-        alert("Xin đăng nhập lại username và password chính xác")
-    }
-}
 
+document.querySelector(".login-form").addEventListener("submit", 
+    function (e) {
+        e.preventDefault()
+        console.log(e);
+        const loginUsername = String(document.getElementById('loginUsername').value);
+        const loginPassword = String(document.getElementById('loginPassword').value);
+        if (loginUsername == "vinhthanh" && loginPassword == "123456") {
+            window.location.href  = "../../index.html"
+        } else {
+            alert("Xin đăng nhập lại username và password chính xác")
+        }
+    }
+)
 
