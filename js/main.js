@@ -20,7 +20,7 @@ function submitLogin() {
     const loginPassword = String(document.getElementById('loginPassword').value);
     console.log(loginPassword);
     if (loginUsername == "vinhthanh" && loginPassword == "123456") {
-        window.location.href = "index.html"
+        window.location.pathname = "index.html"
     } else {
         alert("Xin đăng nhập lại username và password chính xác")
     }
