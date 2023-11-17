@@ -1,0 +1,59 @@
+.footer-page {
+    background-color: #555;
+    border: 1px solid black;
+    padding: 20px 40px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: whitesmoke;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-container a:hover {
+    color: rgb(236, 202, 161);
+}
+
+.footer-container p {
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.support a {
+    display: block;
+    margin: 20px 0px;
+    /* padding: 10px 0px;   */
+}
+
+.infomation a {
+    display: block;
+    margin: 20px 0px;
+}
+
+.contact i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.line {
+    width: 50px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+}
+.line-style {
+    margin: 5px auto;
+    background-color: red;
+}
+
+.map {
+    margin-top: 10px;
+}

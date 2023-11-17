@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test project</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main-page.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <header class="header-page">
+            <div class="logo">
+                <a href="./index.html"><img src="../img/new2-logo.png" alt="logo"></a>
+            </div>
+            <div class="search-bar">
+                <form>
+                    <input type="search" placeholder="search....">
+                    <button><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+            <div class="cart-login">
+                <a href="./html/account/login.html"><i class="bi bi-person-fill"></i></a>
+                <a href="#"><i class="bi bi-cart-fill"></i></a>
+            </div>
+        </header>
+        <nav class="menu-nav">
+            <div class="menu-bar">
+                <ul>
+                    <li class="menu-list">
+                        <a href="#">Tất Cả Sản Phẩm</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="#">Giày Adidas <i class="bi bi-caret-down-fill"></i></a>
+                        <div class="drop-item">
+                            <a href="#">Adidas Predator</a>
+                            <a href="#">Adidas Copa</a>
+                            <a href="#">Adidas X</a>
+                        </div>
+                    </li>
+                    <li class="menu-list">
+                        <a href="#">Giày Nike <i class="bi bi-caret-down-fill"></i></a>
+                        <div class="drop-item">
+                            <a href="#">Nike Mercurial</a>
+                            <a href="#">Nike Phantom</a>
+                            <a href="#">Nike Tiempo</a>
+                        </div>
+                    </li>
+                    <li class="menu-list">
+                        <a href="#">Giày Puma <i class="bi bi-caret-down-fill"></i></a>
+                        <div class="drop-item">
+                            <a href="#">Puma King</a>
+                            <a href="#">Puma Future</a>
+                            <a href="#">Puma Ultra</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <!-- End Header Page -->
+    <div class="main-container">
+        <aside class="filter-bar">
+            <div class="filter-container">
+                <div class="filter-brand">
+                    <div class="filter-title" onclick="hideshow(brandDropDown)">
+                        <span>Thương Hiệu</span>
+                        <i class="bi bi-chevron-double-down"></i>
+                    </div>
+                    <div class="filter-lists" id="brand-filter-list">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Adidas</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Nike</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Puma</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-container">
+                <div class="filter-price">
+                    <div class="filter-title" onclick="hideshow(priceDropDown)">
+                        <span>Giá</span>
+                        <i class="bi bi-chevron-double-down"></i>
+                    </div>
+                    <div class="filter-lists" id="price-filter-list">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio">
+                                    <span>0 - 1.000.000đ</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio">
+                                    <span>1.000.000 - 1.500.000</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="" id="">
+                                    <span>1.500.000 - 2.000.000</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="" id="">
+                                    <span>Trên 2.000.000</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-container">
+                <div class="filter-size">
+                    <div class="filter-title" onclick="hideshow(sizeDropDown)">
+                        <span>Size</span>
+                        <i class="bi bi-chevron-double-down"></i>
+                    </div>
+                    <div class="filter-lists" id="size-filter-list">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" value="37">
+                                    <span>37</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" value="38">
+                                    <span>38</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" value="39">
+                                    <span>39</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" value="40">
+                                    <span>40</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" value="41">
+                                    <span>41</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" value="42">
+                                    <span>42</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" value="43">
+                                    <span>43</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" value="44">
+                                    <span>44</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="cards-container">
+            <div class="slide-item_container">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="./img/poster/poster_1.jpg" alt="">
+                        <img id="slide-2" src="./img/poster/poster_2.jpg" alt="">
+                        <img id="slide-3" src="./img/poster/poster_3.jpg" alt="">
+                        <img id="slide-4" src="./img/poster/poster_4.jfif" alt="">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card_container">
+                <div class="product-card">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="./img/collection/Adidas/Adidas Copa/ADIDAS COPA PURE .1 FG CRAZYRUSH - FOOTWEAR WHITE-CORE BLACK-LUCID LEMON_1.jpg"
+                                alt="ADIDAS COPA PURE .1 FG CRAZYRUSH - FOOTWEAR WHITE-CORE BLACK-LUCID LEMON">
+                        </a>
+                    </div>
+                    <div class="product-line"></div>
+                    <div class="item-info">
+                        <div class="item-name">
+                            <a class="product-name" href="#"
+                                title="ADIDAS COPA PURE .1 FG CRAZYRUSH - FOOTWEAR WHITE/CORE BLACK/LUCID LEMON">ADIDAS
+                                COPA PURE .1 FG CRAZYRUSH - FOOTWEAR WHITE/CORE BLACK/LUCID LEMON</a>
+                        </div>
+                        <div class="item-price">
+                            <span>2,000,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="./img/collection/Adidas/Adidas Predator/ADIDAS PREDATOR 20.1 LOW FG-AG INFLIGHT - FOOTWEAR WHITE-GOLD METALLIC-CORE BLACK_1.jpg"
+                                alt="ADIDAS PREDATOR 20.1 LOW FG-AG INFLIGHT - FOOTWEAR WHITE-GOLD METALLIC-CORE BLACK">
+                        </a>
+                    </div>
+                    <div class="product-line"></div>
+                    <div class="item-info">
+                        <div class="item-name">
+                            <a class="product-name" href="#"
+                                title="ADIDAS PREDATOR 20.1 LOW FG-AG INFLIGHT - FOOTWEAR WHITE-GOLD METALLIC-CORE BLACK">ADIDAS
+                                PREDATOR 20.1 LOW FG-AG INFLIGHT - FOOTWEAR WHITE-GOLD METALLIC-CORE BLACK</a>
+                        </div>
+                        <div class="item-price">
+                            <span>2,000,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="./img/collection/Adidas/Adidas X/ADIDAS X CRAZYFAST .1 FG MARINERUSH - BRIGHT ROYAL-FOOTWEAR WHITE-SOLAR RED_1.webp"
+                                alt="ADIDAS X CRAZYFAST .1 FG MARINERUSH - BRIGHT ROYAL-FOOTWEAR WHITE-SOLAR RED">
+                        </a>
+                    </div>
+                    <div class="product-line"></div>
+                    <div class="item-info">
+                        <div class="item-name">
+                            <a class="product-name" href="#"
+                                title="ADIDAS X CRAZYFAST .1 FG MARINERUSH - BRIGHT ROYAL-FOOTWEAR WHITE-SOLAR RED">ADIDAS
+                                X CRAZYFAST .1 FG MARINERUSH - BRIGHT ROYAL-FOOTWEAR WHITE-SOLAR RED</a>
+                        </div>
+                        <div class="item-price">
+                            <span>2,000,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="./img/collection/Nike/Nike Mercurial/Nike Air Zoom Mercurial Superfly 9 - Bright Crimson-White-Black.webp"
+                                alt="Nike Air Zoom Mercurial Superfly 9 - Bright Crimson-White-Black">
+                        </a>
+                    </div>
+                    <div class="product-line"></div>
+                    <div class="item-info">
+                        <div class="item-name">
+                            <a class="product-name" href="#"
+                                title="Nike Air Zoom Mercurial Superfly 9 - Bright Crimson-White-Black">Nike Air Zoom
+                                Mercurial Superfly 9 - Bright Crimson-White-Black</a>
+                        </div>
+                        <div class="item-price">
+                            <span>2,000,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="./img/collection/Nike/Nike Phantom/Nike Phantom GT 2 Elite DF FG Lucent - Glacier Ice-Black-Yellow Strike_1.jpeg"
+                                alt="Nike Phantom GT 2 Elite DF FG Lucent - Glacier Ice-Black-Yellow Strike">
+                        </a>
+                    </div>
+                    <div class="product-line"></div>
+                    <div class="item-info">
+                        <div class="item-name">
+                            <a class="product-name" href="#"
+                                title="Nike Phantom GT 2 Elite DF FG Lucent - Glacier Ice-Black-Yellow Strike_1.jpeg">Nike
+                                Phantom GT 2 Elite DF FG Lucent - Glacier Ice-Black-Yellow Strike</a>
+                        </div>
+                        <div class="item-price">
+                            <span>2,000,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="./img/collection/Puma/Puma Ultra/PUMA Ultra Ultimate FG-AG Gear Up - Ultra Blue-PUMA White-Pro Green_1.webp"
+                                alt="PUMA Ultra Ultimate FG-AG Gear Up - Ultra Blue-PUMA White-Pro Green">
+                        </a>
+                    </div>
+                    <div class="product-line"></div>
+                    <div class="item-info">
+                        <div class="item-name">
+                            <a class="product-name" href="#"
+                                title="PUMA Ultra Ultimate FG-AG Gear Up - Ultra Blue-PUMA White-Pro Green">PUMA Ultra
+                                Ultimate FG-AG Gear Up - Ultra Blue-PUMA White-Pro Green</a>
+                        </div>
+                        <div class="item-price">
+                            <span>2,000,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="./img/collection/Puma/Puma Future/PUMA FUTURE ULTIMATE FG-AG BREAKTHROUGH - PUMA WHITE-PUMA BLACK-FIRE ORCHID_1.webp"
+                                alt="PUMA FUTURE ULTIMATE FG-AG BREAKTHROUGH - PUMA WHITE-PUMA BLACK-FIRE ORCHID">
+                        </a>
+                    </div>
+                    <div class="product-line"></div>
+                    <div class="item-info">
+                        <div class="item-name">
+                            <a class="product-name" href="#"
+                                title="PUMA FUTURE ULTIMATE FG-AG BREAKTHROUGH - PUMA WHITE-PUMA BLACK-FIRE ORCHID">PUMA
+                                FUTURE ULTIMATE FG-AG BREAKTHROUGH - PUMA WHITE-PUMA BLACK-FIRE ORCHID</a>
+                        </div>
+                        <div class="item-price">
+                            <span>2,000,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="./img/collection/Puma/Puma Ultra/PUMA ULTRA ULTIMATE FG-AG BREAKTHROUGH - PUMA WHITE-PUMA BLACK-FIRE ORCHID_1.webp"
+                                alt="PUMA ULTRA ULTIMATE FG-AG BREAKTHROUGH - PUMA WHITE-PUMA BLACK-FIRE ORCHID">
+                        </a>
+                    </div>
+                    <div class="product-line"></div>
+                    <div class="item-info">
+                        <div class="item-name">
+                            <a class="product-name" href="#"
+                                title="PUMA ULTRA ULTIMATE FG-AG BREAKTHROUGH - PUMA WHITE-PUMA BLACK-FIRE ORCHID">PUMA
+                                ULTRA ULTIMATE FG-AG BREAKTHROUGH - PUMA WHITE-PUMA BLACK-FIRE ORCHID</a>
+                        </div>
+                        <div class="item-price">
+                            <span>2,000,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="./img/collection/Nike/Nike Tiempo/NIKE TIEMPO LEGEND 10 ACADEMY MG READY - WHITE-BLACK-BRIGHT CRIMSON_1.webp"
+                                alt="NIKE TIEMPO LEGEND 10 ACADEMY MG READY - WHITE-BLACK-BRIGHT CRIMSON">
+                        </a>
+                    </div>
+                    <div class="product-line"></div>
+                    <div class="item-info">
+                        <div class="item-name">
+                            <a class="product-name" href="#"
+                                title="NIKE TIEMPO LEGEND 10 ACADEMY MG READY - WHITE-BLACK-BRIGHT CRIMSON">NIKE TIEMPO
+                                LEGEND 10 ACADEMY MG READY - WHITE-BLACK-BRIGHT CRIMSON</a>
+                        </div>
+                        <div class="item-price">
+                            <span>2,000,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="./img/collection/Adidas/Adidas Predator/ADIDAS PREDATOR ACCURACY .1 LOW FG MARINERUSH - BRIGHT ROYAL-FOOTWEAR WHITE-BLISS BLUE_1.webp"
+                                alt="ADIDAS PREDATOR ACCURACY .1 LOW FG MARINERUSH - BRIGHT ROYAL-FOOTWEAR WHITE-BLISS BLUE">
+                        </a>
+                    </div>
+                    <div class="product-line"></div>
+                    <div class="item-info">
+                        <div class="item-name">
+                            <a class="product-name" href="#"
+                                title="ADIDAS PREDATOR ACCURACY .1 LOW FG MARINERUSH - BRIGHT ROYAL-FOOTWEAR WHITE-BLISS BLUE">ADIDAS
+                                PREDATOR ACCURACY .1 LOW FG MARINERUSH - BRIGHT ROYAL-FOOTWEAR WHITE-BLISS BLUE</a>
+                        </div>
+                        <div class="item-price">
+                            <span>2,000,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="./img/collection/Nike/Nike Mercurial/NIKE AIR ZOOM MERCURIAL VAPOR 15 - HYPE TURQUOISE-FUCHSIA_DREAM-BLACK-WHITE_1.webp"
+                                alt="NIKE AIR ZOOM MERCURIAL VAPOR 15 - HYPE TURQUOISE-FUCHSIA_DREAM-BLACK-WHITE">
+                        </a>
+                    </div>
+                    <div class="product-line"></div>
+                    <div class="item-info">
+                        <div class="item-name">
+                            <a class="product-name" href="#"
+                                title="NIKE AIR ZOOM MERCURIAL VAPOR 15 - HYPE TURQUOISE-FUCHSIA_DREAM-BLACK-WHITE">NIKE
+                                AIR ZOOM MERCURIAL VAPOR 15 - HYPE TURQUOISE-FUCHSIA_DREAM-BLACK-WHITE</a>
+                        </div>
+                        <div class="item-price">
+                            <span>2,000,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="./img/collection/Puma/Puma Future/PUMA FUTURE ULTIMATE FG-AG GEAR UP - PERSIAN BLUE-PUMA WHITE-PRO GREEN_1.webp"
+                                alt="PUMA FUTURE ULTIMATE FG-AG GEAR UP - PERSIAN BLUE-PUMA WHITE-PRO GREEN">
+                        </a>
+                    </div>
+                    <div class="product-line"></div>
+                    <div class="item-info">
+                        <div class="item-name">
+                            <a class="product-name" href="#"
+                                title="PUMA FUTURE ULTIMATE FG-AG GEAR UP - PERSIAN BLUE-PUMA WHITE-PRO GREEN">PUMA
+                                FUTURE ULTIMATE FG-AG GEAR UP - PERSIAN BLUE-PUMA WHITE-PRO GREEN</a>
+                        </div>
+                        <div class="item-price">
+                            <span>2,000,000đ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <div class="footer-page">
+        <footer class="footer-container">
+            <div class="support">
+                <p>Hỗ Trợ</p>
+                <div class="line"></div>
+                <a href="#">Chính sách bảo hành</a>
+                <a href="#">Chính sách đổi trả</a>
+                <a href="#">Chính sách giao nhận hàng</a>
+                <a href="#">Hướng dẫn mua hàng</a>
+                <a href="#">Hướng dẫn đặt hàng online</a>
+            </div>
+            <div class="infomation">
+                <p>Thông Tin</p>
+                <div class="line"></div>
+                <a href="#">Giới Thiệu</a>
+                <a href="#">Hệ Thống Cừa Hàng</a>
+            </div>
+            <div class="contact">
+                <p>Liên Hệ</p>
+                <div class="line"></div>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31355.76528304333!2d106.67776279812666!3d10.775218529341826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f38f9ed887b%3A0x14aded5703768989!2zUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1700051831811!5m2!1svi!2s"
+                        width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

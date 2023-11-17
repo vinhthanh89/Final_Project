@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.header-page {
+    display: grid;
+    grid-template-columns: 1.5fr 7fr 1.5fr;
+    padding: 0px 30px;
+}
+
+.logo {
+    margin: auto;
+}
+
+.logo img {
+    width: 110px;
+    height: 70px;
+}
+.menu-nav{
+    height: 60px;
+    background-color: #555;
+}
+.menu-bar{
+    height: 100%;
+}
+.menu-bar i{
+    font-size: 14px;
+}
+.menu-bar ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+.drop-item{
+    position: absolute;
+    background-color: #555;
+    min-width: 180px;
+    z-index: 1;
+    text-align: left;
+}
+.drop-item a:hover{
+    background-color: lightgrey;
+}
+.menu-list:hover{
+    text-decoration: underline whitesmoke;  
+}
+.menu-bar a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 20px 15px;
+}
+.drop-item a{
+    display: none;
+}
+.menu-list:hover .drop-item a{
+    display: block;
+}
+.search-bar {
+    display: flex;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.search-bar form {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 40px 5px 20px;
+    border: none;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+
+.search-bar button:hover {
+    color: rgb(162, 163, 162);
+}
+
+.cart-login {
+    margin: auto 18px;
+}
+
+.cart-login a {
+    font-size: 30px;
+    color: inherit;
+    margin-left: 18px;
+}
+.cart-login a:hover{
+    color: rgb(162, 163, 162);
+}
+
+
+
