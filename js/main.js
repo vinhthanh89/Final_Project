@@ -13,12 +13,12 @@ function hideshow(para){
 }
 //đổi tham số para thành các biến element cần đóng mở
 
-let loginUsername = String(document.getElementById('login-username').value);
-let loginPassword = String(document.getElementById('login-password').value);
+let loginUsername = String(document.getElementById('loginUsername').value);
+let loginPassword = String(document.getElementById('loginPassword').value);
 
 function submitLogin(){
-    if (loginUsername === "username" && loginPassword === "123456"){
-        window.location.href = "index.html"
+    if (loginUsername == "vinhthanh" && loginPassword == "123456"){
+        alert("Bạn đã đăng nhập thành công")
     }else{
         alert("Xin đăng nhập lại username và password chính xác")
     }
