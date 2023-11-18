@@ -13,13 +13,9 @@ function hideshow(para) {
 }
 //đổi tham số para thành các biến element cần đóng mở
 
-
-
-
 document.querySelector(".login-form").addEventListener("submit", 
     function (e) {
         e.preventDefault()
-        console.log(e);
         const loginUsername = String(document.getElementById('loginUsername').value);
         const loginPassword = String(document.getElementById('loginPassword').value);
         if (loginUsername == "vinhthanh" && loginPassword == "123456") {
