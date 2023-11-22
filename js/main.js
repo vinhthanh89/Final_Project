@@ -1,3 +1,17 @@
+$('.slider').slick({
+    dots: true,
+    arrows: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    fade: true,
+    slidesToShow: 1,
+    prevArrow:
+    "<button type='button' class='slick-prev pull-left'><i class='bi bi-chevron-double-left'></i></button>",
+   nextArrow: 
+   "<button type='button' class='slick-next pull-right'><i class='bi bi-chevron-double-right'></i></button>"
+});
+
 let brandDropDown = document.getElementById('brand-filter-list');
 let priceDropDown = document.getElementById('price-filter-list')
 let sizeDropDown = document.getElementById('size-filter-list')
