@@ -12,7 +12,7 @@
 .header-page {
     display: grid;
     grid-template-columns: 1.5fr 7fr 1.5fr;
-    padding: 0px 30px;
+    padding: 5px 30px;
 }
 
 .logo {
