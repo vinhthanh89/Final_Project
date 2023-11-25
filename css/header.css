@@ -44,6 +44,7 @@
     font-size: 20px;
     padding-left: 0;
 }
+
 .drop-item{
     position: absolute;
     background-color: #555;
@@ -60,13 +61,55 @@
 .menu-bar a {
     text-decoration: none;
     color: whitesmoke;
-    padding: 15px;
+    padding: 20px 15px;
 }
 .drop-item a{
     display: none;
 }
 .menu-list:hover .drop-item a{
     display: block;
+}
+.menu-hambuger{
+    display: none;
+}
+.menu-hambuger ul{
+    list-style: none;
+}
+.menu-hambuger ul a{
+    text-decoration: none;
+}
+.menu-hambuger button {
+    background-color: inherit;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+.menu-hambuger button i{
+    font-size: 30px;
+    color: whitesmoke;
+}
+.dropdown-menu{
+    border-radius: 0;
+    background-color: #555;
+    min-width: 200px;
+}
+.dropdown-menu li{
+    padding: 10px 0px;
+    border-bottom: 1px groove whitesmoke;
+}
+.dropdown-menu li a{
+    color: whitesmoke;
+    text-align: left;
+    font-size: 20px;
+}
+.menu-search-bar{
+    display: none;
+    margin-right: 20px;
+}
+.menu-search-bar input{
+    padding: 5px 20px;
+    font-size: 18px;
+    outline: none;
 }
 .search-bar {
     display: flex;

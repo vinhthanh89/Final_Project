@@ -98,6 +98,17 @@
     color: burlywood;
 }
 
+.filter-select{
+    display: none;
+    margin: 20px 0 10px 20px;
+    font-size: 18px;
+}
+.select-item{
+    display: inline-block;
+}
+.filter-select select{
+    margin-right: 20px;
+}
 
 .product-card_container{
     width: 100%;
